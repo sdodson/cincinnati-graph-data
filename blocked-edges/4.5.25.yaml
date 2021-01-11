@@ -1,0 +1,4 @@
+to: 4.5.25
+from: .*
+# OVS failures after upgrading to 4.6.9 https://bugzilla.redhat.com/show_bug.cgi?id=1914284 and potentially https://bugzilla.redhat.com/show_bug.cgi?id=1914393
+# Introduced into 4.5.25 via https://github.com/openshift/sdn/pull/229
