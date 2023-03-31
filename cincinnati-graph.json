@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {"version": "4.13.0-0.ci.test-2023-03-31-180707-ci-ln-cb21kqb-latest", "payload": "registry.build05.ci.openshift.org/ci-ln-cb21kqb/release@sha256:c84a24405d21a4f4b22127c9c5541dde4d177aff808c1b31747d9fd4a1ef4ddc"},
+    {"version": "4.14.1", "payload": "quay.io/openshift-release-dev/ocp-release@sha256:1111111111111111111111111111111111111111111111111111111111111111"},
+    {"version": "4.14.3", "payload": "quay.io/openshift-release-dev/ocp-release@sha256:3333333333333333333333333333333333333333333333333333333333333333"},
+    {"version": "4.14.2", "payload": "quay.io/openshift-release-dev/ocp-release@sha256:2222222222222222222222222222222222222222222222222222222222222222"}
+  ],
+  "conditionalEdges": [
+    {
+      "edges": [{"from": "4.13.0-0.ci.test-2023-03-06-135014-ci-ln-cw3q32t-latest", "to": "4.14.1"}],
+      "risks": [
+        {
+          "url": "https://example.com/oldest",
+          "name": "Oldest",
+          "message": "Risk to 4.14.1",
+          "matchingRules": [{"type": "PromQL", "promql": { "promql": "0 * group(cluster_version)"}}]
+        }
+      ]
+    },
+    {
+      "edges": [{"from": "4.13.0-0.ci.test-2023-03-06-135014-ci-ln-cw3q32t-latest", "to": "4.14.3"}],
+      "risks": [
+        {
+          "url": "https://example.com/youngest",
+          "name": "Youngest",
+          "message": "Risk to 4.14.3",
+          "matchingRules": [{"type": "PromQL", "promql": { "promql": "0 * group(cluster_operator_conditions)"}}]
+        }
+      ]
+    },
+    {
+      "edges": [{"from": "4.13.0-0.ci.test-2023-03-06-135014-ci-ln-cw3q32t-latest", "to": "4.14.2"}],
+      "risks": [
+        {
+          "url": "https://example.com/middle",
+          "name": "Middle",
+          "message": "Risk to 4.14.2",
+          "matchingRules": [{"type": "PromQL", "promql": { "promql": "0 * group(cluster_version_available_updates)"}}]
+        }
+      ]
+    }
+  ]
+}
