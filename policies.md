@@ -49,8 +49,9 @@ gantt
     4.100.12 :d410012, after d410011, 7d
     4.100.12 :d410013, after d410012, 7d
     Section Monthly
-    4.100.1 :m41001, 2024-04-01, 30d
+    4.100.1 :m41001, 2024-04-12, 30d
     4.100.5 :m41005, after m41001, 30d
     4.100.7 :m41007, after m41005, 30d
 ```
 
+Monthly policy ships each second tuesday and picks a version shipped previously up to 60d old based on non public method used to determine the best version. 
