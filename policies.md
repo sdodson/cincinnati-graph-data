@@ -20,7 +20,7 @@ gantt
     4.10.10 :c41010, after c41009, 7d
     4.10.11 :c41011, after c41010, 7d
     4.10.12 :c41012, after c41011, 7d
-    4.10.12 :c41013, after c41012, 7d
+    4.10.13 :c41013, after c41012, 7d
     section Early Insights
     4.10.0  :ea41000, 2024-03-03,7d
     4.10.1  :ea41001, after ea41000, 7d
@@ -35,7 +35,7 @@ gantt
     4.10.10 :ea41010, after ea41009, 7d
     4.10.11 :ea41011, after ea41010, 7d
     4.10.12 :ea41012, after ea41011, 7d
-    4.10.12 :ea41013, after ea41012, 7d
+    4.10.13 :ea41013, after ea41012, 7d
     Section Default
     4.10.0  :d41000, 2024-03-05,7d
     4.10.1  :d41001, after d41000, 7d
@@ -50,7 +50,7 @@ gantt
     4.10.10 :d41010, after d41009, 7d
     4.10.11 :d41011, after d41010, 7d
     4.10.12 :d41012, after d41011, 7d
-    4.10.12 :d41013, after d41012, 7d
+    4.10.13 :d41013, after d41012, 7d
     Section Monthly
     4.10.1  :m41001, 2024-04-12, 30d
     4.10.5  :m41005, after m41001, 30d
@@ -77,7 +77,7 @@ gantt
     4.10.10 :d41010, after d41009, 7d
     4.10.11 :d41011, after d41010, 7d
     4.10.12 :d41012, after d41011, 7d
-    4.10.12 :d41013, after d41012, 7d
+    4.10.13 :d41013, after d41012, 7d
     Section Monthly
     4.10.1 :m41001, 2024-04-12, 30d
     4.10.5 :m41005, after m41001, 30d
