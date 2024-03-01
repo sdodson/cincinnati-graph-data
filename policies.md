@@ -62,6 +62,7 @@ gantt
 ```
 
 Best case, we select relatively current monthly versions which are approximately 14 days old at time of delivery
+
 Candidate and Early Insights removed for brevity
 ```mermaid
 gantt
@@ -88,6 +89,7 @@ gantt
 ```
 
 Now, worst case, 4.15.6 is the third monthly release and it's as old as possible given 60d lookback
+
 Candidate and Early Insights removed for brevity
 ```mermaid
 gantt
