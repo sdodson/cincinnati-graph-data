@@ -15,7 +15,7 @@ gantt
     4.15.0-rc.5 :c415rc5, 2024-02-02, 7d
     4.15.0-rc.7 :c415rc7, 2024-02-14, 7d
     4.15.0-rc.8 :c415rc8, 2024-02-21, 7d
-    4.15.0  :c41500, 2024-03-01,7d
+    4.15.0  :c41500, 2024-02-26,7d
     4.15.1  :c41501, after c41500, 7d
     4.15.2  :c41502, after c41501, 7d
     4.15.3  :c41503, after c41502, 7d
@@ -30,7 +30,7 @@ gantt
     4.15.12 :c41512, after c41511, 7d
     4.15.13 :c41513, after c41512, 7d
     section Early Insights
-    4.15.0  :ea41500, 2024-03-03,7d
+    4.15.0  :ea41500, 2024-02-28,7d
     4.15.1  :ea41501, after ea41500, 7d
     4.15.2  :ea41502, after ea41501, 7d
     4.15.3  :ea41503, after ea41502, 7d
@@ -45,7 +45,7 @@ gantt
     4.15.12 :ea41512, after ea41511, 7d
     4.15.13 :ea41513, after ea41512, 7d
     Section Default
-    4.15.0  :d41500, 2024-03-05,7d
+    4.15.0  :d41500, 2024-03-01,7d
     4.15.1  :d41501, after d41500, 7d
     4.15.2  :d41502, after d41501, 7d
     4.15.3  :d41503, after d41502, 7d
@@ -67,7 +67,7 @@ Candidate and Early Insights removed for brevity
 gantt
     dateFormat  YYYY-MM-DD
     Section Default
-    4.15.0  :d41500, 2024-03-05,7d
+    4.15.0  :d41500, 2024-02-26,7d
     4.15.1  :d41501, after d41500, 7d
     4.15.2  :d41502, after d41501, 7d
     4.15.3  :d41503, after d41502, 7d
@@ -93,7 +93,7 @@ Candidate and Early Insights removed for brevity
 gantt
     dateFormat  YYYY-MM-DD
     Section Default
-    4.15.0  :d41500, 2024-03-05,7d
+    4.15.0  :d41500, 2024-02-26,7d
     4.15.1  :d41501, after d41500, 7d
     4.15.2  :d41502, after d41501, 7d
     4.15.3  :d41503, after d41502, 7d
