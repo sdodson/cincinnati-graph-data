@@ -1,5 +1,5 @@
 # Hypothetical 4.15 rollout with Policies
-Monthly policy ships each second tuesday and picks a version shipped previously up to 60d old based on non public method used to determine the best version. 
+Monthly policy ships each second tuesday and picks a version shipped no less than 7d old but no more than 30d ago yielding a 61d maximum latency in the event that the desired fix ships the day after the selected version due to having to wait for next cycle.
 48hr delay between Candidate, Early Insights, and Default respectively
 
 First, Candidate, Early Insights, and Default channels only
@@ -61,7 +61,7 @@ gantt
     4.15.13 :d41513, after d41512, 7d
 ```
 
-Best case, we select relatively current monthly versions which are approximately 14 days old at time of delivery
+Lowest latency case, each time we select the newest version that's at least 7d old.
 
 Candidate and Early Insights removed for brevity
 ```mermaid
@@ -83,12 +83,12 @@ gantt
     4.15.12 :d41512, after d41511, 7d
     4.15.13 :d41513, after d41512, 7d
     Section Monthly
-    4.15.1 :m41501, 2024-04-12, 30d
-    4.15.5 :m41505, after m41501, 30d
-    4.15.11 :m41511, after m41505, 30d
+    4.15.1  :m41501, 2024-04-09,2024-05-13
+    4.15.9  :m41509, 2024-05-14,2024-06-11
+    4.15.14 :m41514, 2024-06-11,2024-07-09
 ```
 
-Now, worst case, 4.15.6 is the third monthly release and it's as old as possible given 60d lookback
+Now, oldest possible selection for two subsequent monthly recommendations. The person waiting for the fix in either 4.15.7, or 4.15.12 has to wait 60 days from the time that version is available in default channel.
 
 Candidate and Early Insights removed for brevity
 ```mermaid
@@ -110,9 +110,9 @@ gantt
     4.15.12 :d41512, after d41511, 7d
     4.15.13 :d41513, after d41512, 7d
     Section Monthly
-    4.15.1  :m41501, 2024-04-12, 30d
-    4.15.5  :m41505, after m41501, 30d
-    4.15.6  :m41506, after m41505, 30d
+    4.15.1  :m41501, 2024-04-09,2024-05-13
+    4.15.6  :m41506, 2024-05-14,2024-06-11
+    4.15.10 :m41510, 2024-06-11,2024-07-09
 ```
 
 
