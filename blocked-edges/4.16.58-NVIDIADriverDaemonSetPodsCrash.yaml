@@ -9,6 +9,6 @@ matchingRules:
 - type: PromQL
   promql:
     promql: |
-      group by (name) (csv_succeeded{_id="", name=~"(kernel-module-management(?:.hub|)|nvidia-gpu-addon-operator|amd-gpu-operator|operator-for-ai-chips-on-aws|gpu-operator-certified)[.].*|habana-ai-operator|intel-device-plugins-operator"})
+      group by (name) (csv_succeeded{_id="", name=~"(kernel-module-management(?:.hub|)|nvidia-gpu-addon-operator|amd-gpu-operator|operator-for-ai-chips-on-aws|gpu-operator-certified|habana-ai-operator|intel-device-plugins-operator)[.].*"})
       or on (_id)
       0 * group(csv_count{_id=""})
